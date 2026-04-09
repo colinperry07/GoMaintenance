@@ -1,2 +1,1 @@
-# GoMaintenance
 # DontPassGo
