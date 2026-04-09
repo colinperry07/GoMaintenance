@@ -2,15 +2,10 @@ package main
 
 import (
 	"fmt"
+
+	. "github.com/colinperry07/DontPassGo/internal/builder"
 )
 
 func main() {
-	fmt.Println(modifyText("Hello World!", "32"))
-}
-
-func modifyText (textToModify string, modifier string) string {
-	prefix := "\033["
-	reset := "\033[0m"
-
-	return prefix + modifier + "m" + textToModify + reset
+	fmt.Println(Build("Hello World!", WithForeground(31)))
 }
