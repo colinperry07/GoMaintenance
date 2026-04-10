@@ -7,5 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(Build("Hello World!", WithForeground(31)))
+
+	fmt.Println(Build("DontPassGo Password Manager", WithForeground(31)))
 }
